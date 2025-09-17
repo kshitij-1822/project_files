@@ -3,14 +3,20 @@
 
 <head>
 
-    <title>Document</title>
+    <title>Website</title>
     <style>
+       body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+       }
         .main-container {
             width: 100vw;
-            height: 100vh;
+            height: 100%;
             background-color: skyblue;
             display: flex;
             flex-direction: column;
+            
         }
 
         .top {
@@ -27,33 +33,72 @@
             height: 100%;
             background-color: white;
             display: flex;
-            justify-content:space-evenly;
+            justify-content: space-evenly;
             align-items: center;
-          
+
             position: relative;
-           
+
         }
-        .header{
+
+        .header {
             width: 100%;
             height: 10%;
             display: flex;
-            
+
         }
-        .main-box{
-        width: 100%;
-        height: 80%;
-        background-color: aqua;
-        display: flex;
+
+        .main-box {
+            width: 100%;
+            height: 80%;
+            background-color: aqua;
+            display: flex;
         }
-        .top-box-left{
+
+        .top-box-left {
             width: 70%;
             height: 100%;
-            background-color: blueviolet;
+            background-color: #c4d42b;
+            display: flex;
+            flex-direction: column;
         }
-        .top-box-right{
+
+        .top-box-right {
             width: 30%;
             height: 100%;
             background-color: blue;
+
+        }
+
+        .tl-box {
+            width: 100%;
+            height: 60%;
+            background-color: #c4d42b;
+            font-size: 55px;
+
+
+        }
+
+        .tl-bottom {
+            width: 50%;
+            height: 40%;
+            background-color: white;
+        }
+
+        .sub-class {
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            display: flex;
+            border: solid;
+
+        }
+
+        .sub {
+            width: 20%;
+            height: 100%;
+            background-color: violet;
+            border: 20px;
+
         }
     </style>
 </head>
@@ -63,13 +108,42 @@
         <div class="header">
             <div class="top"> <button style="border-radius: 10px; background-color: black; color: white;">Lovers
                     Magazine ⌵</button></div>
-            <div class="top-right"> <span>Home</span> <span>Interviews</span> <span>Mixes</span> <span><img src="./search-icon.png" alt=""></span></div>
+            <div class="top-right"> <span>Home</span> <span>Interviews</span> <span>Mixes</span> <span><img
+                        src="./search-icon.png" alt=""></span></div>
         </div>
         <div class="main-box">
-            <div class="top-box-left"></div>
-            <div class="top-box-right"></div>
+            <div class="top-box-left">
+                <div class="tl-box" style="font-family: Arial, Helvetica, sans-serif;">
+                    <h1> Leena <br> Murdeshwar<br>
+
+                    </h1>
+                </div>
+                <div class="tl-bottom" style="font-family: 'Times New Roman', Times, serif;">
+                    <h1>Leena is a New York–based visual <br>designer and storyteller, weaving <br> bold cultural roots,
+                        thoughtful <br> strategy, and everyday play into her <br> work.</h1>
+                </div>
+            </div>
+            <div class="top-box-right"><img
+                    src="https://spaces.is/media/pages/loversmagazine/interviews/leena-murdeshwar/89fbde5cd6-1750048777/mgp_4261-1146x1604.4-crop-q90.webp"
+                    alt="" height="100%" width="100%"></div>
+
         </div>
+        <div class="sub-class">
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+        </div>
+       
     </div>
+     <div class="sub-class">
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+            <div class="sub"></div>
+        </div>
 </body>
 
 </html

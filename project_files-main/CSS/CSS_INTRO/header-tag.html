@@ -4,66 +4,12 @@
 <head>
 
     <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            width: 100vw;
-            height: 100px;
-            background-color: #415E72;
-            display: flex;
-        }
-
-        .logo {
-            width: 20%;
-            height: 100px;
-           
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h1 {
-            color: white;
-        }
-
-        nav {
-            width: 60%;
-            height: 100px;
-            
-        }
-        ul{
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            align-items: center;
-            font-size: 30px;
-            color: white;
-            list-style: none;
-        }
-
-        .button-group {
-            width: 20%;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           
-        }
-        button{
-            font-size: 25px;
-            padding: 7px;
-            border-radius: 10px;
-            border: none;
-            background-color: #748DAE;
-        }
-        </style>
 </head>
+<link rel="stylesheet" href="./header-tag.css   ">
 
 <body>
+    <!-- header start -->
     <header>
         <div class="logo">
             <h1>Portfolio</h1>
@@ -78,6 +24,49 @@
         </nav>
         <div class="button-group"><button>Sign up / Log in</button></div>
     </header>
+    <!-- header end -->
+    <main>
+        <!-- home section start -->
+        <section class="home">
+            <div class="home-content">
+                <h1 class="home-title">Welcome to my portfolio</h1>
+                <h2 class="home-subtitle">My name is Mohit, <i>I am a web developer</i></h2>
+            </div>
+        </section>
+        <!-- home section end -->
+
+
+        <!-- about section start -->
+        <section class="about">
+            <div class="about-title-section">
+
+                <h2 class="about-title">About</h2>
+            </div>
+        </section>
+        <!-- about section end -->
+
+
+
+        <!-- project section start -->
+        <section class="project">
+            <div class="project-title-section">
+
+                <h2 class="project-title">Project</h2>
+            </div>
+        </section>
+        <!-- project section end -->
+
+
+        <!-- contact section start -->
+        <section class="contact">
+            <div class="contact-title-section">
+
+                <h2 class="contact-title">contact</h2>
+            </div>
+        </section>
+        <!-- contact section end -->
+
+    </main>
 </body>
 
 </html>

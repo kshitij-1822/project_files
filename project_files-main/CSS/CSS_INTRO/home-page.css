@@ -1,0 +1,119 @@
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* header start------------------ */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.logo {
+    width: 30%;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 25px;
+
+}
+
+/* header end------------------- */
+
+
+/* home section start */
+.home{
+    width: 100%;
+    height: 750px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyxsjc_LuVTLiUuyWoK12R-5P9WfynxpfQDQ&s");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-container{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.395);
+}
+.home-content{
+    width: 30%;
+    height: 30%;
+    background-color: black;
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* home section end */
+
+/* product section start */
+.product{
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+
+}
+.product-content{
+    width: 80%;
+    height: 10%;
+   color: white;
+   font-size: 30px;
+}
+.product-cards{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 25%;
+    height: 45%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.card-image{
+    width: 95%;
+    height: 60%;
+    border-radius: 20px;
+   
+}
+.card-text{
+    width: 80%;
+    height: 20%;
+    background-color: aqua;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+/* product section end */
+

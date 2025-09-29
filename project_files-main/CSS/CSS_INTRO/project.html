@@ -6,6 +6,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
         /* first page start-------------------- */
@@ -218,6 +221,9 @@
             height: 100%;
             background-color: white;
         }
+        .image:hover{
+            opacity: 90%;
+        }
 
         /* second page end---------------------- */
 
@@ -229,19 +235,71 @@
             height: 100%;
             background-color: white;
             display: flex;
+
             justify-content: center;
             align-items: center;
 
             gap: 40px;
         }
 
-        .image-3 {
+        .image-no1 {
             width: 30%;
             height: 70%;
-            background-color: gray;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            justify-content: end;
+            position: relative;
+            
+            background-image: url(https://spaces.is/media/pages/loversmagazine/79b0b07b3e-1723031519/scout-796x995-crop-q90.webp);
+            background-position: center;
+            background-size: cover;
+        }
+        .image-no1:hover, .image-no2:hover, .image-no3:hover{
+            transform: scale(1.01);
+        }
+    
+
+        .image-no2 {
+            width: 30%;
+            height: 70%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            justify-content: end;
+            position: relative;
+
+            background-image: url(https://spaces.is/media/pages/loversmagazine/8e1caa771f-1723031652/culture-ad-796x995-crop-q90.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .image-no3 {
+            width: 30%;
+            height: 70%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            justify-content: end;
+            position: relative;
+
+            background-image: url(https://spaces.is/media/pages/loversmagazine/3a15143e02-1723031724/studios-ad-796x995-crop-q90.webp);
+            background-position: center;
+            background-size: cover;
         }
 
         /* third page start------------------- */
+
+
+
+        /* fourth page start-------------------- */
+
+
+
+        /* fourth page end-------------------- */
     </style>
 </head>
 
@@ -355,19 +413,28 @@
         <!-- third page start -->
         <div class="sub-three">
             <div class="main-3">
-                <div class="image-3"> <img
-                        src="https://spaces.is/media/pages/loversmagazine/79b0b07b3e-1723031519/scout-796x995-crop-q90.webp"
-                        alt="" width="100%" height="100%"></div>
-                <div class="image-3"> <img
-                        src="https://spaces.is/media/pages/loversmagazine/8e1caa771f-1723031652/culture-ad-796x995-crop-q90.webp"
-                        alt="" width="100%" height="100%"></div>
-                <div class="image-3"><img
-                        src="https://spaces.is/media/pages/loversmagazine/3a15143e02-1723031724/studios-ad-796x995-crop-q90.webp"
-                        alt="" width="100%" height="100%"></div>
+                <div class="image-no1 ">
+                    <h2 style="position: relative; left: 20px;font-family: Montserrat, sans-serif;">Scout</h2>
+                    <p  style="position: relative; left: 20px; font-family: Montserrat, sans-serif;">Connecting exceptional companies with <br>exceptional talents</p>
+                </div>
+                <div class="image-no2">
+                    <h2 style="position: relative; left: 20px; font-family: Montserrat, sans-serif;">Culture</h2>
+                    <p style="position: relative; left: 20px; font-family: Montserrat, sans-serif;">The Glassdoor alternative. A platform <br>that showcases the best companies.</p>
+                </div>
+                <div class="image-no3">
+                    <h2 style="position: relative; left: 20px; font-family: Montserrat, sans-serif;">Studios</h2>
+                    <p style="position: relative; left: 20px; font-family: Montserrat, sans-serif;">Browse and hire the perfect design <br>studio for your next project.</p>
+
+                </div>
             </div>
         </div>
         <!-- third page end -->
+
+        <!-- fourth page start -->
         <div class="sub-four"></div>
+        <!-- fourth page end -->
+
+
         <div class="sub-five"></div>
         <div class="sub-six"></div>
         <div class="sub-seven"></div>

@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
-    
-        .main-box{
+        .main-box {
             width: 700px;
-            height:500px ;
+            height: 500px;
             background-color: aqua;
-            display: flex;
-            justify-content: end;
-            align-items: end;
            
-            
-        }
-        .box-1{
-            width: auto;
-            height: 20px;
            
+
+
         }
 
+        .box-1 {
+            width: auto;
+            height: 20px;
+
+        }
     </style>
 </head>
+
 <body>
-    <div class="main-box">
-        <div class="box-1">
-            <input type="text" >
-        </div>
-        <div class="box-2"> 
-            <button onclick="showoutput()">Click Me</button>
-        </div>
+    <div class="main-box" id="screen">
+
     </div>
+    <div class="box-1"></div>
+    <input type="number" id="input-one">
+    <input type="number" id="input-two">
     
+   
+    <button onclick="showoutput()">Click Me</button>
+
+
+
+
 </body>
 
 <script>
-function showoutput(){
-    let x= 5;
-    alert(x);
+    function showoutput() {
+       let x = document.getElementById("input-one").value;
+       let y = document.getElementById("input-two").value;
+      
+       document.getElementById("screen").innerHTML = x / y ;
+       
     }
 </script>
 

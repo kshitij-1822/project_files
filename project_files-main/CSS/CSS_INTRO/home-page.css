@@ -34,7 +34,7 @@ ul {
 
 
 /* home section start */
-.home{
+.home {
     width: 100%;
     height: 750px;
     background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
@@ -42,16 +42,18 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
 }
-.home-container{
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-background-color: rgba(0, 0, 0, 0.395);
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.395);
 }
-.home-content{
+
+.home-content {
     width: 30%;
     height: 30%;
     background-color: black;
@@ -62,25 +64,47 @@ background-color: rgba(0, 0, 0, 0.395);
     align-items: center;
     flex-direction: column;
 }
+
 /* home section end */
 
+/* about section start */
+.about {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    padding-left: 10%;
+   
+}
+.about-content{
+ 
+}
+
+/* about section end */
+
 /* product section start */
-.product{
+.product {
     width: 100%;
     height: 800px;
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
+ 
 
 }
-.product-content{
+
+.product-content {
     width: 80%;
     height: 10%;
-   color: white;
-   font-size: 30px;
+    color: white;
+    font-size: 30px;
 }
-.product-cards{
+
+.product-cards {
     width: 80%;
     height: 90%;
     display: flex;
@@ -89,7 +113,8 @@ background-color: rgba(0, 0, 0, 0.395);
     gap: 30px;
     flex-wrap: wrap;
 }
-.card{
+
+.card {
     width: 25%;
     height: 45%;
     background-color: white;
@@ -99,21 +124,23 @@ background-color: rgba(0, 0, 0, 0.395);
     align-items: center;
     flex-direction: column;
 }
-.card-image{
+
+.card-image {
     width: 95%;
     height: 60%;
     border-radius: 20px;
-   
+
 }
-.card-text{
+
+.card-text {
     width: 80%;
     height: 20%;
     background-color: aqua;
 }
-h1{
+
+h1 {
     margin: 0;
     padding: 0;
 }
 
 /* product section end */
-

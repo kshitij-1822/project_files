@@ -34,9 +34,9 @@
     
    
     <button onclick="showa()">a</button>
-     <button onclick="showm()">m</button>
+     <!-- <button onclick="showm()">m</button>
       <button onclick="showd()">d</button>
-       <button onclick="shows()">s</button>
+       <button onclick="shows()">s</button> -->
 
 
 
@@ -50,28 +50,33 @@
         function showa() {
             let x = Number(document.getElementById("input-one").value);
        let y = Number(document.getElementById("input-two").value);
-      let a = x + y ; 
-      document.getElementById("screen").innerHTML = a ;
+      let a = x / y * 100; 
+      document.getElementById("screen").innerHTML = a + "%";
       }
-       function showm() {
-        let x = Number(document.getElementById("input-one").value);
-       let y = Number(document.getElementById("input-two").value);
-      let m = x * y ;
-      document.getElementById("screen").innerHTML = m ;
-       }
-       function showd() {
-        let x = Number(document.getElementById("input-one").value);
-       let y = Number(document.getElementById("input-two").value);
-      let d =  x / y ;
-      document.getElementById("screen").innerHTML = d ;
-       }
-       function shows() {
-        let x = Number(document.getElementById("input-one").value);
-       let y = Number(document.getElementById("input-two").value);
-      let s =  x - y ;
-      document.getElementById("screen").innerHTML = s ;
-       }
+    //    function showm() {
+    //     let x = Number(document.getElementById("input-one").value);
+    //    let y = Number(document.getElementById("input-two").value);
+    //   let m = x * y ;
+    //   document.getElementById("screen").innerHTML = m ;
+    //    }
+    //    function showd() {
+    //     let x = Number(document.getElementById("input-one").value);
+    //    let y = Number(document.getElementById("input-two").value);
+    //   let d =  x / y ;
+    //   document.getElementById("screen").innerHTML = d ;
+    //    }
+    //    function shows() {
+    //     let x = Number(document.getElementById("input-one").value);
+    //    let y = Number(document.getElementById("input-two").value);
+    //   let s =  x - y ;
+    //   document.getElementById("screen").innerHTML = s ;
+    //    }
         
+    // function showa(){
+    //     let y =
+        
+    //     document.getElementById("screen").innerHTML="Data type of " + y + " is" + typeof y;
+    // }
        
        
     

@@ -13,6 +13,12 @@
             border-style: solid;
             text-align: center;
             font-size: 20px;
+            margin-left: 30%;
+            display: flex;
+            justify-content: center;
+            background-color: navajowhite;
+            
+
            
 
         }
@@ -48,11 +54,11 @@
 </body>
 <script>
    
-    let profileImage = "https://www.popsci.com/wp-content/uploads/2023/02/13/Mustang-Dark-Horse-Carbon-Fiber-Wheels_01.jpg?quality=85&w=2000";
-    let name = " Nmae :  Mohit Charde";
+    let profileImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQytc93VfA29gwZ4w1ySdWjx1CSJBM6qGG3BA&s";
+    let name = " Name :  Mohit Charde";
     let age = "Age : I am 17 year old";
-    let address = "Addrass : chandika mandir, katol";
-    let myClass = " myClass : 2nd year ";
+    let address = "Address : chandika mandir, katol";
+    let myClass = " std/Class : 2nd year ";
     let phoneNo = " phoneNo :9284712423";
     let email = " Email : mohitcharde22@gmail.com";
     let fatherName = "FatherName : Bhalchandra Charde";
@@ -60,12 +66,14 @@
     let gender = " Gender : Male";
     let emergencyNo = " Emergency No : 9822386207";
 
+    
 
 
 
+    document.getElementById("emergencyNo").style.color="#C5C7BC"
     document.getElementById("profile-image").src = profileImage;
     document.getElementById("name").innerHTML = name;
-    document.getElementById("age").innerHTML = age;
+    document.getElementById("age").innerHTML=age;
     document.getElementById("address").innerHTML = address;
     document.getElementById("myClass").innerHTML = myClass;
     document.getElementById("phoneNo").innerHTML = phoneNo;

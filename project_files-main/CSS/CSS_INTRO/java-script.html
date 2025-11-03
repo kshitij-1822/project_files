@@ -31,6 +31,7 @@
     <div class="box-1"></div>
     <input type="number" id="input-one">
     <input type="number" id="input-two">
+    <input type="number" id="input-three">
     
    
     <button onclick="showa()">a</button>
@@ -50,8 +51,9 @@
         function showa() {
             let x = Number(document.getElementById("input-one").value);
        let y = Number(document.getElementById("input-two").value);
-      let a = x / y * 100; 
-      document.getElementById("screen").innerHTML = a + "%";
+       let z = Number(document.getElementById("input-three").value);
+      let a = x + y + z ; 
+      document.getElementById("screen").innerHTML = a /3;
       }
     //    function showm() {
     //     let x = Number(document.getElementById("input-one").value);

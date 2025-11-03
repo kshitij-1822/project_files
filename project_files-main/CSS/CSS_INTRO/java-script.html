@@ -34,10 +34,14 @@
     <input type="number" id="input-three">
     
    
+   
+    <input type="number" id="input-four">
+    <input type="number" id="input-five">
     <button onclick="showa()">a</button>
-     <!-- <button onclick="showm()">m</button>
-      <button onclick="showd()">d</button>
-       <button onclick="shows()">s</button> -->
+     
+      
+      <!-- <button onclick="showd()">d</button>
+       <button onclick="shows()">s</button> --> 
 
 
 
@@ -49,17 +53,57 @@
       
     
         function showa() {
-            let x = Number(document.getElementById("input-one").value);
+            // input phase-----------
+       let x = Number(document.getElementById("input-one").value);
        let y = Number(document.getElementById("input-two").value);
        let z = Number(document.getElementById("input-three").value);
-      let a = x + y + z ; 
-      document.getElementById("screen").innerHTML = a /3;
+
+       let p = Number(document.getElementById("input-four").value);
+       let q = Number(document.getElementById("input-five").value);
+
+
+            //  process----------
+       let a = (x  + y + z)/3 ; 
+       let m= (p+q) /2; 
+       let average=(a+m)/2;
+
+            //   output-----------
+      document.getElementById("screen").innerHTML = a+"<br>"+m + "<br>" + average ;
+      
       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //    function showm() {
-    //     let x = Number(document.getElementById("input-one").value);
-    //    let y = Number(document.getElementById("input-two").value);
-    //   let m = x * y ;
+    //     let x = Number(document.getElementById("input-four").value);
+    //    let y = Number(document.getElementById("input-five").value);
+    //   let m = (x + y)/2 ;
     //   document.getElementById("screen").innerHTML = m ;
+    //    }
+    //    function showaverage(){
+    //    document.getElementById("screen").innerHTML = (a+m)/2
     //    }
     //    function showd() {
     //     let x = Number(document.getElementById("input-one").value);

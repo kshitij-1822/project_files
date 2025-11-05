@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>calculator</title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .container {
+            width: 400px;
+            height: 600px;
+            background-color: white;
+
+
+        }
+
+        .screen {
+            width: 400px;
+            height: 100px;
+            background-color: gray;
+            border-radius: 10px;
+        }
+
+        .row-one {
+            width: 400px;
+            height: 100px;
+            background-color: white;
+            text-align: center;
+        }
+
+        button {
+            height: 100px;
+            width: 95px;
+            font-size: large;
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+
+        .zero-button {
+            width: 194px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="screen"></div>
+            <div class="row-one">
+                <button id="AC" onclick="mohit()">AC</button>
+                <button id="+/-" onclick="mohit()">+/-</button>
+                <button id="%" onclick="mohit()">%</button>
+                <button id="/" onclick="mohit()">/</button>
+            </div>
+            <div class="row-one">
+                <button id="7" onclick="mohit()">7</button>
+                <button id="8" onclick="mohit()">8</button>
+                <button id="9" onclick="mohit()">9</button>
+                <button id="*" onclick="mohit()">*</button>
+            </div>
+            <div class="row-one">
+                <button id="4" onclick="mohit()">4</button>
+                <button id="5" onclick="mohit()">5</button>
+                <button id="6" onclick="mohit()">6</button>
+                <button id="-" onclick="mohit()">-</button>
+            </div>
+            <div class="row-one">
+                <button id="1" onclick="mohit()">1</button>
+                <button id="2" onclick="mohit()">2</button>
+                <button id="3" onclick="mohit()">3</button>
+                <button id="+" onclick="mohit()">+</button>
+            </div>
+            <div class="row-one">
+                <button class="zero-button" id="0" onclick="mohit()">0</button>
+
+                <button id="." onclick="mohit()">.</button>
+                <button id="=" onclick="mohit()">=</button>
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+ <script>
+        function mohit() {
+            document.getElementById("AC").innerHTML += AC;
+            document.getElementById("+/-").innerHTML = ac;
+            document.getElementById("%").innerHTML +=%;
+            document.getElementById("/").innerHTML +=/;
+            document.getElementById("7").innerHTML += 7;
+            document.getElementById("8").innerHTML += 8;
+            document.getElementById("9").innerHTML += 9;
+            document.getElementById("*").innerHTML +=*;
+            document.getElementById("4").innerHTML += 4;
+            document.getElementById("5").innerHTML += 5;
+            document.getElementById("6").innerHTML += 6;
+            document.getElementById("-").innerHTML += -;
+            document.getElementById("1").innerHTML += 1;
+            document.getElementById("2").innerHTML += 2;
+            document.getElementById("3").innerHTML += 3;
+            document.getElementById("+").innerHTML += +;
+            document.getElementById("0").innerHTML += 0;
+            document.getElementById(".").innerHTML +=.;
+            document.getElementById("=").innerHTML +==;
+        }
+    </script>
+</html>

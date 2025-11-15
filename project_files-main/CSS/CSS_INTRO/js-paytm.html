@@ -58,7 +58,7 @@
             height: 10%;
         }
 
-        .withdrawal-successful {
+        .Withdrawal-successful {
             width: 80%;
             height: 10%;
             display: none;
@@ -69,7 +69,7 @@
 </head>
 
 <body>
-    
+
     <div class="main-container">
         <div class="white-container">
             <h2>ATM Withdrawal</h2>
@@ -78,19 +78,21 @@
                 <h3 id="display"></h3>
                 <input type="number" id="input">
             </div>
-            
+
             <button onclick="myFunction2()">Withdrawal</button>
-            <div class="Withdrawal-successful" id="">Withdrawal Successful</div>
+            <div class="Withdrawal-successful" id="withdrawal">Withdrawal Successful</div>
         </div>
 
     </div>
     <script>
-         document.getElementById("display").innerHTML = mohit
+        let mohit = 10000
+        document.getElementById("display").innerHTML = mohit
         function myFunction2() {
 
             let parth = document.getElementById("input").value;
             mohit = mohit - Number(parth)
             document.getElementById("display").innerHTML = mohit;
+            document.getElementById("withdrawal").style.display = "block"
         }
     </script>
 </body>

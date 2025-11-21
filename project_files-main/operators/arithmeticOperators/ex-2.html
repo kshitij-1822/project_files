@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sum And Difference Calculator</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main-container {
+            width: 30%;
+            height: 90%;
+            background-color: lightcoral;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px;
+        }
+
+        .display {
+            width: 80%;
+            height: 30%;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 60%;
+            height: 6%;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 30%;
+            height: 5%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h2>Total Marks And Percent </h2>
+        Display:
+        <div class="display" id="display-1"></div>
+        <div class="display" id="display-2"></div>
+
+        Input:
+        <input type="text" id="input-1" placeholder="Input One">
+        <input type="text" id="input-2" placeholder="Input two">
+        <input type="text" id="input-3" placeholder="Input Three">
+        <input type="text" id="input-4" placeholder="Input Four">
+        <input type="text" id="input-5" placeholder="Input Five">
+        <button onclick="Total()">Submit</button>
+    </div>
+    <script>
+        function Total() {
+            let a = document.getElementById("input-1").value;
+            let b = document.getElementById("input-2").value;
+            let c = document.getElementById("input-3").value;
+            let d = document.getElementById("input-4").value;
+            let e = document.getElementById("input-5").value;
+           
+            let total = Number(a) + Number(b) + Number(c) + Number(d) + Number(e)
+            document.getElementById("display-1").innerHTML = "Total Marks :" +total;
+             let percent = (total/500)*100
+            document.getElementById("display-2").innerHTML = percent + "%"  
+          
+        }
+    </script>
+</body>
+
+</html>

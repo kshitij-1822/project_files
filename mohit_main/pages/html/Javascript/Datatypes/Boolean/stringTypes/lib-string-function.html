@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>String Functions</title>
+</head>
+
+<body>
+    <script>
+        // concat function
+        let String1 = prompt("Enter String one:");
+        let String2 = prompt("Enter String two:");
+        let String3 = String1.concat(String2)
+        console.log("concated string is " + String3)
+
+        // uppercase function
+        let upperString = String3.toUpperCase()
+        console.log(upperString)
+
+        // lowercase function
+        let lowerString = String3.toLowerCase()
+        console.log(lowerString)
+
+        // length properties
+        let stringLength = lowerString.length
+        console.log(stringLength)
+
+        // charAt function
+        let l1 = lowerString.charAt(0)
+        let l2 = lowerString.charAt(3)
+        console.log(l1.concat(l2))
+
+        // split function
+        let letter = lowerString.split("")
+        console.log(letter)
+    </script>
+</body>
+
+</html>

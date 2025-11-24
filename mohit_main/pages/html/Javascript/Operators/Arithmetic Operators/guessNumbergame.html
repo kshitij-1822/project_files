@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <input type="text" id="input">
+        <button onclick="game()">Match</button>
+    </div>
+    <script>
+        function game() {
+            let a = document.getElementById("input").value;
+            let num = Math.random()*10;
+            let number = Math.floor(num);
+            let sum = a == number;
+            alert(number);
+            alert(sum);
+        }
+
+
+    </script>
+</body>
+
+</html>

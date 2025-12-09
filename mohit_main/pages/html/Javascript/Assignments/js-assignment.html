@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-contain {
+            height: 500px;
+            width: 700px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display-one {
+            height: 30%;
+            width: 90%;
+            background-color: rgb(203, 203, 203);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display-two {
+            height: 30%;
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .display-three {
+            height: 30%;
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        input {
+            height: 45px;
+            width: 240px;
+            text-align: center;
+        }
+
+        button {
+            height: 50px;
+            width: 250px;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-contain">
+        <div class="display-one" id="display">
+            <p id="display"></p>
+        </div>
+        <div class="display-two">
+            <input type="text" name="" id="input-one" placeholder="input one">
+            <input type="text" name="" id="input-two" placeholder="input two">
+        </div>
+        <div class="display-three">
+            <button id="button-one" onclick="mohit()">Red</button>
+            <button style="background-color: blue;color: white;" id="button-one" onclick="charde()">Blue</button>
+        </div>
+    </div>
+</body>
+<script>
+     let b = 0;
+
+    function mohit() {
+        let a = Number(document.getElementById("input-one").value);
+       
+        b = b + a;
+
+        document.getElementById("display").innerHTML = b;
+    }
+
+    function charde() {
+        let a = document.getElementById("input-two").value;
+        document.getElementById("display").innerHTML = a;
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Example one</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 30%;
+            height: 70%;
+            background-color: lightcoral;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .display{
+            width: 80%;
+            height: 20%;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Student Marks Calculator</h1>
+    <br>
+    <h2>Math Marks:75</h2>
+    <br>
+    <h2>Science Marks To Add:35</h2>
+    <br>
+    <button onclick="Marks()">Add Science Marks</button>
+    <br>
+    <div class="display" id="display"></div>
+</div>
+    <script>
+        function Marks(){
+            let maths = 40;
+        let science = 35;
+        maths += science
+document.getElementById("display").innerHTML = "After Adding Science Marks ="+ maths
+
+
+        }
+       
+
+    </script>
+</body>
+
+</html>

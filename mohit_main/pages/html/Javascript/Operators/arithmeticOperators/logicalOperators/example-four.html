@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Card Totsl ($)</label>
+    <br><br>
+    <input type="text" id="card-total">
+    <br><br>
+    <input type="checkbox" id="checkbox">User is a member
+    <br><br>
+    <button onclick="check()">Check Discount</button>
+    <script>
+         function check(){
+            let cardTotal = document.getElementById("card-total").value;
+            let a = document.getElementById("checkbox").checked;
+       if (cardTotal >= 100 && a){
+        alert("discount applied")
+       }
+       else{
+        alert("discount not applied")
+       }
+         }
+    </script>
+</body>
+
+</html>

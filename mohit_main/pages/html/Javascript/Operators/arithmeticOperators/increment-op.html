@@ -5,11 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 15%;
+            height: 20%;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        button{
+            width: 50%;
+            height: 20%;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <button onclick="countNumber()">Count</button>
-    <p id="display"></p>
+    <div class="container">
+      <button onclick="countNumber()">Count</button>
+        <p id="display"></p>
+    </div>
     <script>
         // let count = 0;
         // alert(count)
@@ -23,7 +51,7 @@
         function countNumber() {
 
             count++;
-        document.getElementById("display").innerHTML = count;
+            document.getElementById("display").innerHTML = count;
         }
     </script>
 </body>

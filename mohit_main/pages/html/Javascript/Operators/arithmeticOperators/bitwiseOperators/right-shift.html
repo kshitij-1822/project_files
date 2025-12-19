@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 40%;
+            height: 80%;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+        }
+
+        input {
+            width: 100%;
+            height: 8%;
+        }
+
+        button {
+            margin-left: 30%;
+        }
+
+        .display {
+            width: 70%;
+            height: 20%;
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="container">
+        <div class="heading">
+            <h1>Right Shift</h1>
+            <br>
+            <h3>Enter Number:</h3>
+            <input type="text" id="input" placeholder="enter number:">
+            <br><br>
+            <h3>Enter Number:</h3>
+            <input type="text" id="input-one" placeholder="enter number:">
+            <br><br>
+            <button onclick="Check()">Enter</button>
+            <br><br>
+        </div>
+        <div class="display" id="display"></div>
+    </div>
     <script>
-        let num = prompt();
-        let shifNumber = prompt();
-        let leftShift = num >> shifNumber;
-        alert(leftShift)
+        function Check() {
+            let num = document.getElementById("input").value;
+            let shifNumber = document.getElementById("input-one").value;
+            let rightShift = num >> shifNumber;
+            document.getElementById("display").innerHTML = rightShift;
+        }
     </script>
 </body>
+
 </html>

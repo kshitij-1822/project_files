@@ -1,17 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <Script>
-        let number = prompt("Enter a number :");
-        let power = prompt("Enter a power :")
-        let answer = Number(number) ** Number(power);
-        alert(answer);
 
-    </Script>
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 40%;
+            height: 80%;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border-radius: 20px;
+
+        }
+
+        input {
+            width: 100%;
+            height: 8%;
+        }
+
+        button {
+            margin-left: 35%;
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+        }
+
+        .display {
+            width: 70%;
+            height: 20%;
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1><u>Exponential (Power)</u></h1>
+            <br>
+            <h3>Enter Number :</h3>
+            <input type="text" id="input">
+            <br><br>
+            <h3>Enter Number :</h3>
+            <input type="text" id="input-one">
+            <br><br>
+            <button onclick="Check()">Answer</button>
+            <br><br>
+        </div>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+        function Check() {
+            let number = document.getElementById("input").value;
+            let power = document.getElementById("input-one").value;
+            let answer = Number(number) ** Number(power);
+            document.getElementById("display").innerHTML= answer;
+        }
+    </script>
 </body>
+
 </html>
+
+
+
+
+
+
+

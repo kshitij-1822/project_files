@@ -4,20 +4,85 @@
 <head>
 
     <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 40%;
+            height: 80%;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .container {
+            width: 50%;
+            height: 30%;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        input {
+            width: 50%;
+            height: 30px;
+        }
+
+        button {
+            width: 150px;
+            height: 30px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+
+        .display {
+            width: 60%;
+            height: 20%;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 id="number-1"></h1>
-    <h1 id="number-2"></h1>
-    <label id="display"></label>
-    <br>
-    <input type="number" id="input">
-    <br>
-    <button onclick="getInput()">Submit</button>
 
-    <h2 id="result"></h2>
-    <br>
-    <button onclick="reload()">Next Que</button>
+    <div class="main-container">
+        <h1><u>Answer The Question</u></h1>
+        <div class="container">
+            <h1 id="number-1"></h1>
+            <h1 id="number-2"></h1>
+        </div>
+        <br>
+        <label id="display"></label>
+        <br>
+        <input type="number" id="input" placeholder=" Enter Your Answer :">
+        <br>
+        <button onclick="getInput()">Submit</button>
+        <br>
+        <div class="display">
+            <h2 id="result"></h2>
+        </div>
+
+        <br>
+        <button onclick="reload()">Next Que</button>
+    </div>
 
     <script>
 

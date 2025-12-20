@@ -28,15 +28,16 @@
         input {
             width: 50%;
             height: 30px;
-           
         }
-button{
-    width: 120px;
-    height: 30px;
-    font-size: 18px;
-    background-color: white;
-    border-radius: 20px;
-}
+
+        button {
+            width: 120px;
+            height: 30px;
+            font-size: 18px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
         .display {
             width: 80%;
             height: 35%;
@@ -52,10 +53,10 @@ button{
 
 <body>
     <div class="main-container">
-        <h1> Percentage To Grade </h1>
+        <h1> Month Checker </h1>
         <br>
-        Enter Percentage :
-        <input type="text" id="input" placeholder="Enter Your Percentages :">
+        Enter month :
+        <input type="text" id="input" placeholder="Enter Month In The Form Of Number :">
         <br>
         <button onclick="marks()">Enter</button>
         <br>
@@ -65,23 +66,43 @@ button{
         function marks() {
             let marks = document.getElementById("input").value;
             let result = document.getElementById("display");
-            if (marks >= 90) {
-                result.innerHTML = "Grade A"
+            if (marks == 0) {
+                result.innerHTML = "January"
             }
-            else if (marks >= 75) {
-                result.innerHTML = "Grade B"
+            else if (marks == 1) {
+                result.innerHTML = "February"
             }
-            else if (marks >= 50) {
-                result.innerHTML = "Grade C"
+            else if (marks == 2) {
+                result.innerHTML = "March"
             }
-            else if (marks >= 35) {
+            else if (marks == 3) {
+                result.innerHTML = "April"
+            }
+            else if (marks == 4) {
+                result.innerHTML = "May"
+            }
+            else if (marks == 5) {
+                result.innerHTML = "June"
+            }
+            else if (marks == 6) {
+                result.innerHTML = "July"
+            }
+            else if (marks == 7) {
+                result.innerHTML = "August"
+            }
+            else if (marks == 8) {
+                result.innerHTML = "September"
+            }
+            else if (marks == 9) {
+                result.innerHTML = "October"
+            }
+            else if (marks == 10) {
+                result.innerHTML = "November"
+            }
+            else if (marks == 11) {
+                result.innerHTML = "December"
+            }
 
-
-                result.innerHTML = "Grade D"
-            }
-            else {
-                result.innerHTML = "Fail"
-            }
         }
     </script>
 </body>

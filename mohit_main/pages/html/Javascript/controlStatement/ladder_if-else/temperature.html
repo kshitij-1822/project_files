@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 50%;
+            height: 50%;
+            background-color: rgb(197, 160, 112);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 50%;
+            height: 30px;
+        }
+
+        button {
+            width: 120px;
+            height: 30px;
+            font-size: 18px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .display {
+            width: 40%;
+            height: 20%;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1> Temperature Range Checker </h1>
+        <br>
+        Enter Temperature (C) :
+        <input type="text" id="input" placeholder="Enter Temperature :">
+        <br>
+        <button onclick="Temperature()">Enter</button>
+        <br>
+        <div class="display" id="display">
+            <p id="display-box"></p>
+        </div>
+    </div>
+    <script>
+        function Temperature() {
+            let marks = document.getElementById("input").value;
+            let result = ""
+            let bgColor = ""
+            let fontColor = ""
+            if (marks >= 40) {
+                result = ("Temperature Is Very Hot")
+                bgColor = "#FF4646"
+                fontColor = "#D73535"
+            }
+            else if (marks >= 30) {
+                result = ("Temperature Is Hot")
+                bgColor = "#FF4646"
+                fontColor = "#FA6868"
+            }
+            else if (marks >= 20) {
+                result = ("Temperature Is Warm")
+                bgColor = "#FFA240"
+                fontColor = "#FFA239"
+            }
+            else if (marks >= 10) {
+                result = ("Temperature Is Cool")
+                bgColor = "#91C6BC"
+                fontColor = "#4B9DA9"
+            }
+            else if (marks >= 0) {
+                result = ("Temperature Is Cold")
+                bgColor = "#9CC6DB"
+                fontColor = "#3291B6"
+            }
+            document.getElementById("display-box").innerHTML = result
+            document.getElementById("display").style.backgroundColor = bgColor;
+            document.getElementById("display-box").style.color = fontColor
+
+        }
+    </script>
+</body>
+
+</html>

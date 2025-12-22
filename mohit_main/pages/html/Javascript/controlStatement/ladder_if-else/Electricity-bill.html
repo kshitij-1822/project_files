@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 50%;
+            height: 50%;
+            background-color: rgb(197, 160, 112);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 50%;
+            height: 30px;
+           
+        }
+button{
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 20px;
+}
+        .display {
+            width: 80%;
+            height: 35%;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1> Electricity Bill Calculator </h1>
+        <br>
+        Enter Units :
+        <input type="text" id="input" placeholder="Enter Your Bill Units :">
+        <br>
+        <button onclick="check()">Enter</button>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+        function check() {
+            let unit = Number( document.getElementById("input").value);
+            
+            
+           let result = "";
+           
+            if (unit <= 50) {
+                result = (unit * 7) 
+            }
+            else if (unit <=150 ) {
+                result =( (50 * 7) + (unit - 50)*8 )
+            }
+            else if (unit <= 250) {
+                result =((50 * 7) + (100 * 8) + (unit - 150) *12)
+            }
+            else  {
+               result = unit * 15
+                 result = surcharge * 0.0
+            }
+             let surcharge = result * 0.20;
+             let total = result + surcharge;
+            document.getElementById("display").innerHTML = total;
+        
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Doctor Is Available</label><br>
+    <input type="radio" name="doctor" id="doc-yes" value="yes">
+    Yes
+    <input type="radio"  name="doctor" id="doc-no" value="no">
+    No<br><br>
+    <label for="">Patient Register</label><br>
+    <input type="radio" id="pati-yes" value="yes">
+    Yes
+    <input type="radio" id="pati-no" value="no">
+    No<br><br>
+    <label for="">Payment Done</label><br>
+    <input type="radio" id="pay-yes" value="yes">
+    Yes
+    <input type="radio" id="pay-no" value="no">
+    No
+    <br><br>
+    <button onclick="doctor()">Check</button>
+
+    <script>
+       
+        function doctor(){
+             let a = ""
+            if(document.getElementById("doc-yes").checked){
+                a = ""
+            }
+        }
+    </script>
+</body>
+</html>

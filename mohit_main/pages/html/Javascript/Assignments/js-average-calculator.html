@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 600px;
+            width: 700px;
+            background-color: rgb(71, 205, 220);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            box-shadow: 10px 10px 10px 10px gray;
+            border-top: black 5px solid;
+            border-bottom: black 5px solid;
+            border-left: black 5px solid;
+            border-right: black 5px solid;
+
+        }
+
+        h1 {
+            font-size: 40px;
+            text-decoration: underline;
+            color: transparent;  
+        }
+
+        input {
+            height: 40px;
+            width: 250px;
+            font-size: 20px;
+        }
+
+        label {
+            color: blueviolet;
+            font-size: 25px;
+
+        }
+
+        button {
+            height: 50px;
+            width: 300px;
+            background-color: rgb(39, 171, 124);
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .display {
+            height: 100px;
+            width: 500px;
+            background-color: wheat;
+            font-size: 25px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Average Calculator</h1><br>
+        <label for="">First Number</label><br>
+        <input type="number" id="input-one"><br>
+        <label for="">Second Number</label><br>
+        <input type="number" name="" id="input-two"><br>
+        <label for="">Third Number</label><br>  
+        <input type="number" name="" id="input-three"><br>
+        <button onclick="Mohit()">Calculate averare</button>
+        <br><br><br>
+        <div class="display">
+            <p id="dispaly-001">The Average is <b id="one"></b> , <b id="two"></b> and <b id="three"> </b> is = <b
+                    id="four"></b> </p>
+        </div><br>
+
+
+    </div>
+    <script>
+
+        function Mohit() {
+            let x = Number(document.getElementById("input-one").value);
+            let y = Number(document.getElementById("input-two").value);
+            let z = Number(document.getElementById("input-three").value);
+            let c = (x + y + z) / 3
+            document.getElementById("one").innerHTML = x;
+            document.getElementById("two").innerHTML = y;
+            document.getElementById("three").innerHTML = z;
+            document.getElementById("four").innerHTML = c;
+
+        }
+    </script>
+</body>
+
+</html>

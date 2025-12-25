@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function marks() {
+            let box = prompt();
+            let grade =""
+            switch (true) {
+                case box >= 90:
+                    grade ="Grade A"
+                    break;
+                case box >= 70:
+                    grade ="Grade B"
+                    break;
+                case box >= 50:
+                    grade ="Grade C"
+                    break;
+                case box >= 35:
+                    grade ="Grade D"
+                    break;
+                default:
+                    grade ="Fail"
+                  
+            }
+            alert(grade)
+        }
+        marks()
+    </script>
+</body>
+
+</html>

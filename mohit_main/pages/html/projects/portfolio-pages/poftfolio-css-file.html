@@ -4,162 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS-PROJECT</title>
     <style>
-        body {
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-        .header-main-box{
-            width: 100%;
-            height: 10%;
-        }
-        .header {
-            height: 10%;
-            width: 100%;
-            background-color: rgb(74, 74, 74);
-            position: fixed;
-            display: flex;
-        }
-
-        .header-box-1 {
-            height: 100%;
-            width: 65%;
-            background-color: wheat;
-        }
-
-        .portfolio {
-            font-size: 60px;
-            margin-top: 10px;
-            margin-left: 300px;
-        }
-
-        .header-box-2 {
-            height: 100%;
-            width: 35%;
-            background-color: rgb(163, 161, 156);
-            padding-left: 160px;
-
-        }
-
-        .header-button {
-            font-size: 20px;
-            margin-top: 30px;
-            margin-left: 30px;
-        }
-
         .main-container {
-            height: 100%;
-            width: 100%;
+            height: 100vh;
+            width: 100vw;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            align-content: space-evenly;
-
         }
 
-        .span-one {
-            height: 48%;
+        .section-one {
+            height: 50%;
             width: 100%;
+            background-color: rgb(0, 0, 0);
             display: flex;
-            flex-direction: row;
-           
-            justify-content: space-evenly;
-            align-content: space-evenly;
+            justify-content: center;
+            gap: 60px;
+
         }
 
-        .span-two {
-            height:  48%;
+        .headline {
             width: 100%;
+            font-size: 35px;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+
+        .project-box {
+            height: 350px;
+            width: 350px;
+            background-color: rgb(224, 236, 243);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .project-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgb(10, 179, 209);
+        }
+
+        .img-subject {
+            height: 230px;
+            width: 300px;
+            margin-top: 10px;
+            margin-left: 25px;
+        }
+
+        .project-name {
+            font-size: 23px;
+            text-align: center;
+        }
+
+        .project-button {
+            height: 30px;
+            width: 130px;
+            margin-left: 110px;
+            border-radius: 4px;
+            border: none;
+            font-size: 17px;
+            background-color: rgb(3, 3, 101);
+        }
+
+        a {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        .section-two {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(12, 12, 12);
             display: flex;
-            flex-direction: row;
-            
-            justify-content: space-evenly;
-            align-content: space-evenly;
-
+            justify-content: center;
+            gap: 60px;
 
         }
 
-        .card-one {
-            height: 92%;
-            width: 30%;
-            background-color: aqua;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1.5fr 0.5fr 1fr;
+        @media(max-width:430px) {
+            .section-one {
+                height: auto;
+                flex-direction: column;
+            }
 
-        }
+            .project-box {
+                height: 300px;
+                width: 300px;
+                background-color: rgb(224, 236, 243);
+                border-radius: 8px;
+                margin-left: 30px;
+            }
 
-        .span-card-one {
-            background-color: aliceblue;
-        }
+            .img-subject {
+                height: 180px;
+                width: 280px;
+                margin-top: 11px;
+                margin-left: 10px;
+            }
 
-        .span-card-two {
-            background-color: bisque;
-        }
+            .project-button {
+                margin-left: 85px;
+            }
 
-        .span-card-three {
-            background-color: aquamarine;
+            .section-two {
+                height: auto;
+                flex-direction: column;
+            }
+
+
         }
     </style>
+
 </head>
 
 <body>
+    <div class="main-container">
 
-    <div class="header-main-box">
-        <div class="header">
-            <div class="header-box-1">
-                <h1 class="portfolio">Portfolio</h1>
+        <div class="headline">CSS-PROJECT  </div>
+        <!--  -->
+        <div class="section-one">
+
+            <div class="project-box">
+                <img class="img-subject" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROkR_gzSPdIi8Q5J7YrsyNGjjDxMEyh9cSYA&s" alt="">
+                <p class="project-name">Chess</p>
+                <button class="project-button"><a
+                        href="../../../../../CSS/CSS_INTRO/chess.html">view-project</a></button>
             </div>
-            <div class="header-box-2">
-                <button class="header-button">Home</button>
-                <button class="header-button"> About</button>
-                <button class="header-button"> Project</button>
-                <button class="header-button"> Contact</button>
+
+            <div class="project-box">
+                <img class="img-subject" src="https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/11/school-calculator-buying-guide-jpg.webp" alt="">
+                <p class="project-name">Calculator </p>
+                <button class="project-button"><a href="../Functions/calculator.html">view-project</a></button>
+            </div>
+            <div class="project-box">
+                <img class="img-subject" src="https://st2.depositphotos.com/5123079/9066/i/450/depositphotos_90664026-stock-photo-india-flag-background.jpg" alt="">
+                <p class="project-name"> India Flag</p>
+                <button class="project-button"><a href="../../../../../CSS/CSS_INTRO/class-one.html">view-project</a></button>
 
             </div>
         </div>
 
-    </div>
-    <div class="main-container">
-        <span class="span-one">
-            <div class="card-one">
-                <span class="span-card-one"> </span>
-                <span class="span-card-two"> </span>
-                <span class="span-card-three"> </span>
-            </div>
-            <div class="card-one">
-                <span class="span-card-one"> </span>
-                <span class="span-card-two"> </span>
-                <span class="span-card-three"> </span>
-            </div>
-            <div class="card-one">
-                <span class="span-card-one"> </span>
-                <span class="span-card-two"> </span>
-                <span class="span-card-three"> </span>
-            </div>
-        </span>
-        <span class="span-two">
-            <div class="card-one">
-                <span class="span-card-one"> </span>
-                <span class="span-card-two"> </span>
-                <span class="span-card-three"> </span>
-            </div>
-            <div class="card-one">
-                <span class="span-card-one"> </span>
-                <span class="span-card-two"> </span>
-                <span class="span-card-three"> </span>
-            </div>
-            <div class="card-one">
-                <span class="span-card-one"> </span>
-                <span class="span-card-two"> </span>
-                <span class="span-card-three"> </span>
-            </div>
-        </span>
-    </div>
 
+        <!--  -->
+        <div class="section-two">
+
+  <div class="project-box">
+                <img class="img-subject" src="https://www.bellprinters.com/wp-content/uploads/2018/02/Multicolour-Box-Types-specialists-Indian-Packaging-Company-Bell-Printers.jpg" alt="">
+                <p class="project-name">live-project</p>
+                <button class="project-button"><a
+                        href="../../../../../CSS/CSS_INTRO/exercise-4.html">view-project </a></button>
+            </div>
+
+            <div class="project-box">
+                <img class="img-subject" src="https://www.shutterstock.com/image-illustration/coming-soon-black-color-background-600nw-2659927991.jpg" alt="">
+                <p class="project-name">Coming Soon</p>
+                <button class="project-button"><a href="">view-project</a></button>
+            </div>
+            
+        </div>
+
+    </div>
 
 </body>
 

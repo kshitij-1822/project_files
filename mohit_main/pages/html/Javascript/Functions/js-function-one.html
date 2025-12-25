@@ -53,7 +53,7 @@
 <body>
 
     <div class="main-container">
-        <div class="display"></div>
+        <div class="display" id="display"></div>
         <div class="input-area">
             <input type="number" id="input-one" placeholder="Input One">
             <input type="number" id="input-two" placeholder="Input Two">
@@ -66,14 +66,14 @@
     <script>
         function functionOne() {
             let a = document.getElementById("input-one").value
-            console.log(a)
+           document.getElementById("display").innerHTML = (a)
         }
         let b = 0
         function functionTwo() {
             let a = document.getElementById("input-two").value
             
            b = b+Number(a)
-            console.log(b)
+            document.getElementById("display").innerHTML =(b)
         }
         
     </script>

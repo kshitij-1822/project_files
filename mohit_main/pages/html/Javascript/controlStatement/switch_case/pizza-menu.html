@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-container{
+            width: 40%;
+            height: 60%;
+            border: solid;
+            background-color: whitesmoke;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            
+        }
+        button{
+            width: 70%;
+            height: 10%;
+            border-radius: 10px;
+        }
+        .display{
+            width: 70%;
+            height: 14%;
+            background-color: rgb(88, 205, 137);
+            margin-left: 15%;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .one{
+            background-color: rgb(244, 211, 211);
+        }
+        .two{
+            background-color: rgb(238, 168, 168);
+        }
+        .three{
+            background-color: rgb(211, 109, 109);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>🍕 PIZZA MENU</h1>
+        <br>
+        <button onclick="pizza()" class="one">🍕 Small Pizza $150</button><br><br><br><br>
+        <button onclick="pizza()" class="two">🍕🍕 Medium Pizza $250</button><br><br><br><br>
+        <button onclick="pizza()" class="three">🍕🍕🍕 Large Pizza $350</button><br><br><br>
+        <div class="display"></div>
+    </div>
+    <script>
+        function pizza() {
+            let pizza = ""
+            switch (true) {
+                case (pizza = 150):
+                    document.getElementById("button-1").innerHTML = "You Select Small Pizza : $150";
+                    break;
+                case (pizza = 250):
+                    document.getElementById("button-2").innerHTML = "You Select Medium Pizza : $250";
+                    break;
+                default:
+                    document.getElementById("button-3").innerHTML = "You Select Large Pizza : $350";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

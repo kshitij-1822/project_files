@@ -15,16 +15,16 @@
             let hours = prompt();
             let result =""
             switch (true) {
-                case (hours>5) || (hours<11):
+                case (hours>=5) && (hours<=11):
                     result ="Good Morning"
                     break;
-                case (hours>12) || (hours<17):
+                case (hours>=12) && (hours<=17):
                     result ="Good AfterNoon"
                     break;
-                    case (hours>=18) || (hours<=21):
+                    case (hours>=18) && (hours<=21):
                     result ="Good Evening"
                     break;
-                    case (hours>=22) || (hours<=23):
+                    case (hours>=22) && (hours<=23):
                     result ="Good Evening"
                     break;
                 default:

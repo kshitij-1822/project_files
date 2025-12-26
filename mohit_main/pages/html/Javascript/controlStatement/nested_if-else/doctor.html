@@ -29,9 +29,22 @@
     <script>
 
         function doctor() {
-            let a = ""
+            let a = "Doctor Unavailable"
             if (document.getElementById("doc-yes").checked) {
-                a = ""
+               if(document.getElementById("pati-yes").checked){
+                if(document.getElementById("pay-yes").checked){
+                    alert("Payment Is Done")
+                }
+                else{
+                    alert("Payment Is Not Done")
+                }
+               }
+               else{
+                alert("Registration Not Done")
+               }
+            }
+            else{
+                alert(a);
             }
         }
     </script>

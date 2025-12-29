@@ -15,7 +15,8 @@
             justify-content: center;
             align-items: center;
         }
-        .main-container{
+
+        .main-container {
             width: 40%;
             height: 60%;
             border: solid;
@@ -24,14 +25,17 @@
             text-align: center;
             align-items: center;
             border-radius: 10px;
-            
+
         }
-        button{
+
+        button {
             width: 70%;
             height: 10%;
             border-radius: 10px;
+            font-size: 20px;
         }
-        .display{
+
+        .display {
             width: 70%;
             height: 14%;
             background-color: rgb(88, 205, 137);
@@ -42,13 +46,16 @@
             justify-content: center;
             text-align: center;
         }
-        .one{
+
+        .one {
             background-color: rgb(244, 211, 211);
         }
-        .two{
+
+        .two {
             background-color: rgb(238, 168, 168);
         }
-        .three{
+
+        .three {
             background-color: rgb(211, 109, 109);
         }
     </style>
@@ -58,25 +65,41 @@
     <div class="main-container">
         <h1>🍕 PIZZA MENU</h1>
         <br>
-        <button onclick="pizza()" class="one">🍕 Small Pizza $150</button><br><br><br><br>
-        <button onclick="pizza()" class="two">🍕🍕 Medium Pizza $250</button><br><br><br><br>
-        <button onclick="pizza()" class="three">🍕🍕🍕 Large Pizza $350</button><br><br><br>
-        <div class="display"></div>
+        <button onclick="pizzaOne()" class="one">🍕 Small Pizza $150</button><br><br><br><br>
+        <button onclick="pizzaTwo()" class="two">🍕🍕 Medium Pizza $250</button><br><br><br><br>
+        <button onclick="pizzaThree()" class="three">🍕🍕🍕 Large Pizza $350</button><br><br><br>
+        <div class="display">
+            <p id="display"></p>
+        </div>
     </div>
     <script>
-        function pizza() {
-            let pizza = ""
-            switch (true) {
-                case (pizza = 150):
-                    document.getElementById("button-1").innerHTML = "You Select Small Pizza : $150";
+        let pizza = ""
+        function getPizza() {
+
+            switch (pizza) {
+                case 150:
+                    text = "You Select Small Pizza : $150";
                     break;
-                case (pizza = 250):
-                    document.getElementById("button-2").innerHTML = "You Select Medium Pizza : $250";
+                case 250:
+                    text = "You Select Medium Pizza : $250";
                     break;
                 default:
-                    document.getElementById("button-3").innerHTML = "You Select Large Pizza : $350";
+                    text = "You Select Large Pizza : $350";
 
             }
+            document.getElementById("display").innerHTML = text;
+        }
+        function pizzaOne() {
+            pizza = 150
+            getPizza()
+        }
+        function pizzaTwo() {
+            pizza = 250
+            getPizza()
+        }
+        function pizzaThree() {
+            pizza = 350
+            getPizza()
         }
     </script>
 </body>

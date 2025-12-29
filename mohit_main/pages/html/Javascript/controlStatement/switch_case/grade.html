@@ -2,17 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 50%;
+            height: 30px;
+        }
+
+        button {
+            width: 120px;
+            height: 30px;
+            font-size: 18px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .display {
+            width: 60%;
+            height: 20%;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
-
+    <div class="main-container">
+        <h1> Grade Checker </h1>
+        <br>
+        Enter Marks :
+        <input type="text" id="input" placeholder="Enter marks :">
+        <br>
+        <button onclick="number()">Enter</button>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
     <script>
-
-        function marks() {
-            let box = prompt();
+        function number() {
+            let box  = document.getElementById("input").value;
             let grade =""
             switch (true) {
                 case box >= 90:
@@ -31,10 +83,15 @@
                     grade ="Fail"
                   
             }
-            alert(grade)
+            document.getElementById("display").innerHTML = grade   
         }
-        marks()
     </script>
 </body>
 
 </html>
+
+
+
+
+
+

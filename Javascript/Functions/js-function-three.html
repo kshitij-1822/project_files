@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 55%;
+        height: 60%;
+        background-color: aqua;
+        border-radius: 10px;
+
+
+
+
+    }
+
+    input {
+        width: 30%;
+        height: 6%;
+        border-radius: 8px;
+        margin-left: 120px;
+        margin-top: 250px;
+    }
+
+
+
+    button {
+        width: 20%;
+        height: 6%;
+        margin-left: 40%;
+        margin-top: 40px;
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+    <div class="box" id="display">
+
+        <input type="text" id="input-one">
+        <input type="text" id="input-two">
+        <br>
+        <button onclick="functionOne()">Submit</button>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    function functionOne() {
+        // input
+        let sachin = prompt(document.getElementById("input-one").value)
+        let tendulkar = prompt(document.getElementById("input-two").value)
+        // process
+
+        let name = sachin + tendulkar
+        // output
+        document.getElementById("displaly").innerHTML = "the output is" + name
+    }
+</script>

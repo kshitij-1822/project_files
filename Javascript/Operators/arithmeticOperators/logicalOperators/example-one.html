@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 40%;
+            height: 80%;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+        }
+
+        input {
+            width: 100%;
+            height: 8%;
+        }
+
+        button {
+            margin-left: 30%;
+        }
+
+        .display {
+            width: 70%;
+            height: 20%;
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Pass Or Fail</h1>
+            <br>
+            <h3>Enter Number:</h3>
+            <input type="text" id="input" placeholder="enter number:">
+            <br><br>
+            <h3>Enter Number:</h3>
+            <input type="text" id="input-one" placeholder="enter number:">
+            <br><br>
+            <button onclick="Check()">Log In</button>
+            <br><br>
+        </div>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+        function Check() {
+
+
+
+            let a = document.getElementById("input").value;
+            let b = document.getElementById("input-one").value;
+            let c = "abcd"
+
+            if (((a + a) == 200) || ((b - a) == a) && (c === "abcd") && ((a * 20))) {
+                document.getElementById("display").innerHTML = ("Pass")
+            }
+            else {
+                document.getElementById("display").innerHTML = ("Fail")
+            }
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

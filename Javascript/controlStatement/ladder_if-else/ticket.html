@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 50%;
+            height: 50%;
+            background-color: rgb(197, 160, 112);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 50%;
+            height: 30px;
+        }
+
+        button {
+            width: 120px;
+            height: 30px;
+            font-size: 18px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .display {
+            width: 80%;
+            height: 35%;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1> Ticket Checker </h1>
+        <br>
+        Enter Age :
+        <input type="text" id="input" placeholder="Enter Age :">
+        <br>
+        <button onclick="Age()">Enter</button>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+        function Age() {
+            let age = document.getElementById("input").value;
+            let output = document.getElementById("display");
+
+            if(age<=5||age>=75){
+            output.innerHTML = "free"
+        }
+        else if(age<=12||age>=65){
+            output.innerHTML = "Half Ticket"
+        }
+        else {
+            output.innerHTML = "Full Ticket"
+        }
+       
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+

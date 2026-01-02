@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .calculator-box {
+            height: 490px;
+            width: 350px;
+            background-color: #5b7cb8;
+            border-radius: 8px;
+        }
+
+        .screen-box {
+            height: 100px;
+            width:320px;
+            background-color: rgb(159, 185, 164);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-left: 15px;
+            font-size: 25px;
+        }
+        .button-row-1{
+            height: 60px;
+            width: 60px;
+            margin-left: 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: rgb(105, 104, 104);
+            color: wheat;
+            font-size: 28px;
+            border-radius: 100px;
+        }
+        .button-zero{
+            height: 52px;
+            width: 143px;
+            margin-left: 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: rgb(105, 104, 104);
+            color: wheat;
+            font-size: 28px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div class="main-box">
+
+        <div class="calculator-box">
+
+            <div class="screen-box" id="display"></div>
+
+            <div>
+                <button class="button-row-1" onclick="AC()">AC</button>
+                <button class="button-row-1" onclick="remove()">+/-</button>
+                <button class="button-row-1" onclick="percent()">%</button>
+                <button class="button-row-1" onclick="div()">÷</button>
+            </div>
+            <div>
+                <button class="button-row-1"onclick="number7()">7</button>
+                <button class="button-row-1" onclick="number8()">8</button>
+                <button class="button-row-1" onclick="number9()">9</button>
+                <button class="button-row-1" onclick="multi()">*</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="number4()">4</button>
+                <button class="button-row-1" onclick="number5()">5</button>
+                <button class="button-row-1" onclick="number6()">6</button>
+                <button class="button-row-1" onclick="sub()">-</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="number1()">1</button>
+                <button class="button-row-1" onclick="number2()">2</button>
+                <button class="button-row-1" onclick="number3()">3</button>
+                <button class="button-row-1" onclick="add()">+</button>
+            </div>
+            <div>
+                <button class="button-zero" onclick="zero()">0</button>
+               
+                <button class="button-row-1" onclick="decimal()">.</button>
+                <button class="button-row-1" onclick="equal()">=</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+     function AC(){
+     document.getElementById("display").innerHTML   -="AC" ;
+    }
+   function remove(){
+     document.getElementById("display").innerHTML   +="+/-" ;
+    }
+     function percent(){
+     document.getElementById("display").innerHTML   +="%" ;
+    }
+     function div(){
+     document.getElementById("display").innerHTML   +="÷" ;
+    }
+    function number7(){
+     document.getElementById("display").innerHTML   +=7 ;
+    }
+     function number8(){
+     document.getElementById("display").innerHTML +=8 ;
+     }
+     function number9(){
+     document.getElementById("display").innerHTML +=9 ;
+    }
+     function multi(){
+     document.getElementById("display").innerHTML +="*";
+     }
+     function number4(){
+        document.getElementById("display").innerHTML +=4;
+     }
+     function  number5(){
+        document.getElementById("display").innerHTML +=5;
+     }
+     function  number6(){
+        document.getElementById("display").innerHTML +=6;
+     }
+     function  sub(){
+        document.getElementById("display").innerHTML +="-";
+     }
+     function  number1(){
+        document.getElementById("display").innerHTML +=1;
+     }
+     function  number2(){
+        document.getElementById("display").innerHTML +=2;
+     }
+     function  number3(){
+        document.getElementById("display").innerHTML +=3;
+     }
+     function  add(){
+        document.getElementById("display").innerHTML +="+";
+     }
+     function  zero(){
+        document.getElementById("display").innerHTML +=0;
+     }
+     function  decimal(){
+        document.getElementById("display").innerHTML +=".";
+     }
+     function  equal(){
+        document.getElementById("display").innerHTML +="=";
+     }
+     
+</script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 50%;
+            height: 50%;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .display {
+            width: 80%;
+            height: 35%;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1> Positive Negative Checker </h1>
+        <br>
+        <input type="text" id="input" placeholder="Enter Number :">
+        <br>
+        <button onclick="number()">Check</button>
+        <br>
+        <div class="display" id="display"></div>
+    </div>
+    <script>
+        function number() {
+
+            let number = document.getElementById("input").value;
+            let result = (number > 0) ? "It is Positive" : "It is Negative";
+            document.getElementById("display").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

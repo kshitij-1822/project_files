@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="display"></p>
+    <p id="display 2"></p>
+    <button onclick="getmoney()">Add Amount</button>
+    <script>
+        // const name = "enjoy programming";
+        // let age = "2 years";
+        // let phoneNumber = 7575767612
+        // alert(name + " " + age + " " +  phoneNumber)
+        // console.log(name +" "+ age + " "+ phoneNumber)
+        // var movieName = ""
+        // function india(){
+        //     movieName = "ABCD"
+        //     console.log(movieName)
+        // }
+        // function USA(){
+        //     let name="Spider Man"
+        //     console.log(name)
+        // }
+
+        let input = prompt("enter your name")
+        alert(input)
+        let sparsh = 0
+        document.getElementById("display").innerHTML = sparsh
+        let swarup = 0
+        function getmoney() {
+            swarup = prompt("enter amount")
+        }
+        sparsh = sparsh + Number(swarup)
+        alert("your balance is" + sparsh)
+        document.getElementById("display 2").innerHTML = sparsh
+
+    </script>
+</body>
+
+</html>

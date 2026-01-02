@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main {
+            height: 500px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: lightcoral;
+            border-radius: 20px;
+            border-left: black 5px solid;
+            border-right: black 5px solid;
+            border-top: black 5px solid;
+            border-bottom: black 5px solid;
+        }
+
+        h1 {
+            font-size: 40px;
+           
+        }
+
+        label {
+            font-size: 25px;
+        }
+
+        input {
+            height: 40px;
+            width: 450px;
+            font-size: 20px;
+        }
+
+        button {
+            height: 41px;
+            width: 200px;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+        }
+
+        .output {
+            height: 100px;
+            width: 450px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Number Comparison</h1>
+        <label for="">First Number :-</label><br>
+        <input type="text" name="" id="input-one" placeholder="Enter First Number"><br><br>
+        <label for="">Second Number :-</label><br>
+        <input type="text" name="" id="input-two" placeholder="Enter Second Number"><br><br>
+        <button onclick="Mohit()">Compare Numbers</button><br>
+        <div class="output" id="result"></div><br>
+    </div>
+</body>
+<script>
+    function Mohit() {
+        let a = Number(document.getElementById("input-one").value);
+        let b = Number(document.getElementById("input-two").value);
+        let c = a == b;
+        document.getElementById("result").innerHTML = c;
+    }
+
+</script>
+
+</html>

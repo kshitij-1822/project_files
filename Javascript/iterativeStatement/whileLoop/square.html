@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre id="display"></pre>
+    <script>
+        let i = 1;
+        let n = 7;
+        while(i<=n){
+            let row = " ";
+            let j = 1;
+            while(j<=n){
+                if(i==1 || i==n || j==1 || j==n){
+                    row += " *"
+                }
+                else{
+                    row += "  "
+                }
+                j++
+            }
+            // console.log(row)
+            // console.log("")
+            i++
+            document.getElementById("display").innerHTML += row + "<br/>";
+        }
+    </script>
+    
+</body>
+</html>

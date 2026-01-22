@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .main-box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .calculator-box {
+            height: 490px;
+            width: 350px;
+            background-color: #5b7cb8;
+            border-radius: 8px;
+        }
+
+        .screen-box {
+            height: 100px;
+            width: 320px;
+            background-color: rgb(159, 185, 164);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-left: 15px;
+            font-size: 25px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .button-row-1 {
+            height: 60px;
+            width: 60px;
+            margin-left: 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: rgb(105, 104, 104);
+            color: wheat;
+            font-size: 28px;
+            border-radius: 100px;
+        }
+
+        .button-zero {
+            height: 52px;
+            width: 143px;
+            margin-left: 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: rgb(105, 104, 104);
+            color: wheat;
+            font-size: 28px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-box">
+
+        <div class="calculator-box">
+
+            <div class="screen-box" id="display"></div>
+
+            <div>
+                <button class="button-row-1" onclick="allClear()">AC</button>
+                <button class="button-row-1" onclick="getText('+/-')">+/-</button>
+                <button class="button-row-1" onclick="getText('%')">%</button>
+                <button class="button-row-1" onclick="getText('÷')">÷</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="getText('7')">7</button>
+                <button class="button-row-1" onclick="getText('8')">8</button>
+                <button class="button-row-1" onclick="getText('9')">9</button>
+                <button class="button-row-1" onclick="getText('*')">*</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="getText('4')">4</button>
+                <button class="button-row-1" onclick="getText('5')">5</button>
+                <button class="button-row-1" onclick="getText('6')">6</button>
+                <button class="button-row-1" onclick="getText('-')">-</button>
+            </div>
+            <div>
+                <button class="button-row-1" onclick="getText('1')">1</button>
+                <button class="button-row-1" onclick="getText('2')">2</button>
+                <button class="button-row-1" onclick="getText('3')">3</button>
+                <button class="button-row-1" onclick="getText('+')">+</button>
+            </div>
+            <div>
+                <button class="button-zero" onclick="getText('0')">0</button>
+
+                <button class="button-row-1" onclick="getText('.')">.</button>
+                <button class="button-row-1" onclick="getText('=')">=</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    let getNumber = 0;
+    document.getElementById("display").innerHTML = 0;
+
+
+    let num1 = 0
+    let num2 = 0
+    const getText = (text) => {
+        document.getElementById("display").innerHTML += text
+        getNumber += text;
+        additionOn = false;
+
+        if (text == '+') {
+            additionOn = true
+        }
+        if (additionOn) {
+            num1 = getNumber
+        }
+        if (text != '+') {
+            num2 = getNumber
+        }
+        console.log(getNumber)
+        console.log("Num1 :" + num1)
+        console.log("Num2 :" + num2)
+    }
+
+
+    const allClear = () => {
+        document.getElementById("display").innerHTML = " "
+        getNumber = ""
+        num1 = 0
+        num2 = 0
+    }
+
+    const add = () => {
+        document.getElementById("display").innerHTML = " "
+    }
+
+
+
+
+    //      function AC(){
+    //      document.getElementById("display").innerHTML   -="AC" ;
+    //     }
+    //    function remove(){
+    //      document.getElementById("display").innerHTML   +="+/-" ;
+    //     }
+    //      function percent(){
+    //      document.getElementById("display").innerHTML   +="%" ;
+    //     }
+    //      function div(){
+    //      document.getElementById("display").innerHTML   +="÷" ;
+    //     }
+    //     function number7(){
+    //      document.getElementById("display").innerHTML   +=7 ;
+    //     }
+    //      function number8(){
+    //      document.getElementById("display").innerHTML +=8 ;
+    //      }
+    //      function number9(){
+    //      document.getElementById("display").innerHTML +=9 ;
+    //     }
+    //      function multi(){
+    //      document.getElementById("display").innerHTML +="*";
+    //      }
+    //      function number4(){
+    //         document.getElementById("display").innerHTML +=4;
+    //      }
+    //      function  number5(){
+    //         document.getElementById("display").innerHTML +=5;
+    //      }
+    //      function  number6(){
+    //         document.getElementById("display").innerHTML +=6;
+    //      }
+    //      function  sub(){
+    //         document.getElementById("display").innerHTML +="-";
+    //      }
+    //      function  number1(){
+    //         document.getElementById("display").innerHTML +=1;
+    //      }
+    //      function  number2(){
+    //         document.getElementById("display").innerHTML +=2;
+    //      }
+    //      function  number3(){
+    //         document.getElementById("display").innerHTML +=3;
+    //      }
+    //      function  add(){
+    //         document.getElementById("display").innerHTML +="+";
+    //      }
+    //      function  zero(){
+    //         document.getElementById("display").innerHTML +=0;
+    //      }
+    //      function  decimal(){
+    //         document.getElementById("display").innerHTML +=".";
+    //      }
+    //      function  equal(){
+    //         document.getElementById("display").innerHTML +="=";
+    //      }
+
+</script>
